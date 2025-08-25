@@ -43,13 +43,7 @@ type TeamCardProps = {
   img?: string;
 };
 
-function TeamCard({
-  name,
-  role,
-  email,
-  phone,
-  img,
-}: TeamCardProps): JSX.Element {
+function TeamCard({ name, role, email, phone, img }: TeamCardProps) {
   return (
     <div className="max-w-sm bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300">
       <img
