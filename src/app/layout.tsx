@@ -26,8 +26,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <head>
         <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Russo+One&display=swap');
+          {`@import url(&apos;https://fonts.googleapis.com/css2?family=Baloo+2&family=Russo+One&display=swap&apos;);`}
         </style>
       </head>
       <body
