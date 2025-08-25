@@ -20,48 +20,46 @@ export default function ParticlesBackground() {
       <Particles
         id="tsparticles"
         options={{
-          background: { color: { value: "#0d0d0d" } }, // dark bg looks nice
+          background: { color: { value: "#f9fafb" } }, // light gray bg (soft white)
           fpsLimit: 120,
           interactivity: {
             events: {
-              onHover: { enable: true, mode: "grab" }, // 👈 grab instead of repulse
+              onHover: { enable: true, mode: "grab" },
               onClick: { enable: true, mode: "push" },
             },
             modes: {
               grab: {
-                distance: 150, // how far the grab effect works
+                distance: 160,
                 links: {
-                  opacity: 0.5, // line opacity when cursor is near
+                  opacity: 0.4,
                 },
               },
               push: { quantity: 2 },
             },
           },
           particles: {
-            color: { value: "#ffffff" },
+            color: { value: "#1f2937" }, // dark gray dots
             links: {
-              color: "#ffffff",
-              distance: 140,
+              color: "#6b7280", // soft gray connection lines
+              distance: 150,
               enable: true,
-              opacity: 0.2,
-              width: 0.5,
+              opacity: 0.3,
+              width: 0.8,
             },
             move: {
               enable: true,
-              speed: 1,
-              outModes: { default: "out" }, // smoother than bounce
+              speed: 0.8,
+              outModes: { default: "out" },
             },
             number: {
-              density: { enable: true, area: 1000 },
-              value: 50,
+              density: { enable: true },
+              value: 60,
             },
-            opacity: { value: 0.8 },
+            opacity: { value: 0.7 },
             shape: { type: "circle" },
-            size: { value: { min: 0.5, max: 1 } },
+            size: { value: { min: 1, max: 2 } },
             shadow: {
-              enable: true,
-              blur: 5,
-              color: "#ffffff",
+              enable: false, // shadows don’t fit light theme
             },
           },
           detectRetina: true,

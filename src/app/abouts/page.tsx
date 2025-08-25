@@ -1,26 +1,34 @@
 "use client";
 
 import { useState } from "react";
+import "../globals.css";
 
 // Fake data
 const contacts = [
   {
-    name: "Mudit Saboo",
+    name: "Vani Shekhadia",
     role: "Symposium Head",
     email: "muditsaboo100@gmail.com",
     phone: "01992929",
     img: "https://via.placeholder.com/150", // sample image
   },
   {
-    name: "Aarav Sharma",
-    role: "Tech Lead",
+    name: "Dushyant Prajapati",
+    role: "Symposium Head",
     email: "aarav.sharma@example.com",
     phone: "01992930",
     img: "https://via.placeholder.com/150",
   },
   {
-    name: "Priya Gupta",
-    role: "Design Lead",
+    name: "Mudit Saboo",
+    role: "Symposium Head",
+    email: "priya.gupta@example.com",
+    phone: "01992931",
+    img: "https://via.placeholder.com/150",
+  },
+  {
+    name: "Manasvi Mehta",
+    role: "Symposium Head",
     email: "priya.gupta@example.com",
     phone: "01992931",
     img: "https://via.placeholder.com/150",
@@ -64,33 +72,64 @@ function TeamCard({
   );
 }
 
-export default function HomePage() {
+export default function AboutPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div>
-      {/* Hero Section */}
-      <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 text-center">
-          <h1 className="bg-blue-800 rounded-lg text-5xl font-semibold tracking-tight text-white sm:text-7xl">
-            Meet The Team Behind Symposium 2025
-          </h1>
+    <main>
+      <section className="grid sm:grid-cols-2 gap-4">
+        {/* Hero Section */}
+        <div className="relative isolate px-6 pt-14 lg:px-8 flex items-center justify-center">
+          <div className="max-w-xl text-center sm:text-left">
+            <h1 className="bg-blue-800 rounded-lg text-5xl font-semibold tracking-tight text-white sm:text-7xl p-4">
+              Meet The Team Behind Symposium 2025
+            </h1>
+          </div>
         </div>
-      </div>
 
-      {/* Team Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 py-12">
-        {contacts.map((contact, id) => (
-          <TeamCard
-            key={id}
-            email={contact.email}
-            role={contact.role}
-            name={contact.name}
-            phone={contact.phone}
-            img={contact.img}
-          />
-        ))}
-      </div>
-    </div>
+        {/* Team Section */}
+        <div className="pt-24 h-[90vh] overflow-y-auto pr-4 scrollbar-hide">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {contacts.map((contact, id) => (
+              <TeamCard
+                key={id}
+                email={contact.email}
+                role={contact.role}
+                name={contact.name}
+                phone={contact.phone}
+                img={contact.img}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="grid sm:grid-cols-2 gap-4">
+        {/* Hero Section */}
+        <div className="relative isolate px-6 pt-14 lg:px-8 flex items-center justify-center">
+          <div className="max-w-xl text-center sm:text-left">
+            <h1 className="bg-blue-800 rounded-lg text-5xl font-semibold tracking-tight text-white sm:text-7xl p-4">
+              Meet The Team Behind Symposium 2025
+            </h1>
+          </div>
+        </div>
+
+        {/* Team Section */}
+        <div className="pt-24 h-[90vh] overflow-y-auto pr-4 scrollbar-hide">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {contacts.map((contact, id) => (
+              <TeamCard
+                key={id}
+                email={contact.email}
+                role={contact.role}
+                name={contact.name}
+                phone={contact.phone}
+                img={contact.img}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
