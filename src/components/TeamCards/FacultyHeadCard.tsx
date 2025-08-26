@@ -15,6 +15,7 @@ type TeamCardProps = {
   phone: string;
   img?: string;
 };
+
 function FacultyHeadCard({ name, role, email, phone, img }: TeamCardProps) {
   return (
     <div className="relative w-[300px] bg-gradient-to-b from-white/70 to-white/40 backdrop-blur-xl rounded-3xl shadow-lg border border-white/20 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
