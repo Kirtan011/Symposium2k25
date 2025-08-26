@@ -24,13 +24,13 @@ export default function Navbar() {
     >
       {/* Logo */}
       <Link href="/">
-        <h1
+        <div
           className="bg-gradient-to-r from-orange-500 to-pink-500 text-white 
-          rounded-b-lg px-4 py-2 text-2xl font-extrabold tracking-wide 
-          shadow-md hover:scale-110 transition-transform"
+          rounded-[30px] px-4 py-2 text-2xl font-extrabold tracking-wide 
+          shadow-md hover:scale-110 shadow-yellow-200 transition-transform"
         >
-          Symposium 2K25
-        </h1>
+          <h1> Symposium 2K25</h1>
+        </div>
       </Link>
 
       {/* Desktop Links */}
@@ -61,12 +61,8 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <Sheet>
         <SheetTrigger asChild>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden text-gray-800"
-          >
-            <Menu className="h-6 w-6" />
+          <Button variant="ghost" size="icon" className="md:hidden ">
+            <Menu className="h-3 w-3" />
           </Button>
         </SheetTrigger>
         <SheetContent
@@ -78,11 +74,20 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`block px-2 py-1 rounded hover:bg-orange-100 ${
-                    pathname === link.href ? "bg-orange-200 font-semibold" : ""
-                  }`}
+                  className={`
+                relative block top-8 font-medium  text-gray-800 transition-colors 
+                hover:text-orange-500
+                after:content-[''] after:absolute after:left-0 after:-bottom-1 
+                after:h-[2px] after:w-0 after:bg-orange-400 
+                after:transition-all after:duration-300
+                hover:after:w-full  
+                ${pathname === link.href ? "text-orange-600 after:w-full" : ""}
+              `}
                 >
-                  <span className="flex justify-center">{link.label}</span>
+                  <span className="bg-orange-50 text-center h-8 flex justify-center">
+                    {link.label}
+                    <br />
+                  </span>
                 </Link>
               </li>
             ))}

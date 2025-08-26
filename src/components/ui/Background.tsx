@@ -59,7 +59,7 @@ export default function ParticlesBackground() {
             shape: { type: "circle" },
             size: { value: { min: 1, max: 2 } },
             shadow: {
-              enable: false, // shadows don’t fit light theme
+              enable: false,
             },
           },
           detectRetina: true,
