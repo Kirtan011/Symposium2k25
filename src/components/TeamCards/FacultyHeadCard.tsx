@@ -1,5 +1,19 @@
 const facultyHeads = [
   {
+    name: "Prof. Prtiesh Saxena",
+    role: " Faculty Coordinator",
+    email: "priteshsaxena@example.com",
+    phone: "01992931",
+    img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
+  },
+  {
+    name: "Prof. Vandana Shah",
+    role: " Faculty Co-coordinator",
+    email: "priteshsaxena@example.com",
+    phone: "01992931",
+    img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
+  },
+  {
     name: "Prof Prtiesh Saxena",
     role: " Faculty Coordinator",
     email: "priteshsaxena@example.com",
@@ -18,7 +32,12 @@ type TeamCardProps = {
 
 function FacultyHeadCard({ name, role, email, phone, img }: TeamCardProps) {
   return (
-    <div className="relative w-[300px] bg-gradient-to-b from-white/70 to-white/40 backdrop-blur-xl rounded-3xl shadow-lg border border-white/20 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+    <div
+      className="relative w-full max-w-[360px] sm:w-[280px] md:w-[320px] lg:w-[340px] 
+  bg-gradient-to-b from-white/70 to-white/40 backdrop-blur-xl rounded-3xl shadow-lg 
+  border border-white/20 overflow-hidden hover:shadow-2xl hover:-translate-y-2 
+  transition-all duration-300 group"
+    >
       {/* Profile Image */}
       <div className="relative flex justify-center mt-6">
         <div className="w-28 h-28 rounded-full bg-gradient-to-tr from-orange-400 to-pink-500 p-[3px] shadow-lg group-hover:scale-105 transition-all">
