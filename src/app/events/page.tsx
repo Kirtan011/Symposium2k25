@@ -1,33 +1,18 @@
-import { Button } from "@/components/ui/button";
+import { EventCard, eventData } from "@/components/EventCards/EventCard";
 
 const EventPage = () => {
   return (
-    <main className="flex flex-col">
-      {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-r from-orange-400 to-pink-500">
-        <h1 className="text-white text-6xl font-bold">Welcome to Symposium</h1>
-      </section>
+    <main className="pt-24 px-6 animate-fadeInSlideUp">
+      <section>
+        <h1 className="text-center text-3xl md:text-4xl font-extrabold text-white mb-12">
+          Upcoming Events 🚀
+        </h1>
 
-      {/* About Section */}
-      <section className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
-        <div className="max-w-3xl text-center">
-          <h2 className="text-4xl font-bold mb-4">About Us</h2>
-          <p className="text-lg text-gray-300">
-            This section has a solid dark background.
-          </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {eventData?.map((data, id) => (
+            <EventCard key={id} {...data} />
+          ))}
         </div>
-      </section>
-
-      {/* Events Section */}
-      <section className="min-h-screen flex items-center justify-center bg-[url('/events-bg.jpg')] bg-cover bg-center text-white">
-        <div className="bg-black/50 p-10 rounded-xl">
-          <h2 className="text-4xl font-bold">Upcoming Events</h2>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="min-h-screen flex items-center justify-center bg-blue-100 text-black">
-        <h2 className="text-4xl font-bold">Contact Us</h2>
       </section>
     </main>
   );

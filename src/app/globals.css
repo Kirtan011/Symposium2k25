@@ -3,6 +3,53 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient-rotate {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
+}
+
+.animate-gradient-rotate {
+  animation: gradient-rotate 10s linear infinite;
+}
+
+@layer utilities {
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+
+  .animate-gradient-rotate {
+    animation: rotate 2s linear infinite;
+  }
+}
+
+.animate-fadeInSlideUp {
+  animation: fadeInSlideUp 1s ease-out forwards;
+}
 .baloo-2 {
   font-family: "Baloo 2", sans-serif;
   font-optical-sizing: auto;
@@ -130,6 +177,8 @@
   scrollbar-width: none;
   /* Firefox */
 }
+
+
 
 @theme inline {
   --color-background: var(--background);

@@ -20,7 +20,7 @@ export default function ParticlesBackground() {
       <Particles
         id="tsparticles"
         options={{
-          background: { color: { value: "#f9fafb" } }, // light gray bg (soft white)
+          background: { color: { value: "#000000" } }, // dark gray bg
           fpsLimit: 120,
           interactivity: {
             events: {
@@ -38,9 +38,9 @@ export default function ParticlesBackground() {
             },
           },
           particles: {
-            color: { value: "#1f2937" }, // dark gray dots
+            color: { value: "#e0e0e0" }, // light gray dots
             links: {
-              color: "#6b7280", // soft gray connection lines
+              color: "#a0a0a0", // soft light gray connection lines
               distance: 150,
               enable: true,
               opacity: 0.3,

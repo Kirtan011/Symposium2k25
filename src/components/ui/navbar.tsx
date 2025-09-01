@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import "@/app/globals.css";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -17,20 +18,22 @@ export default function Navbar() {
 
   return (
     <nav
-      className="w-full fixed top-1 z-50 rounded-[250px] sm:mx-1em 
-      bg-white/70 backdrop-blur-md border border-gray-200 shadow-gray shadow-lg 
-      text-gray-800 px-6 py-3 flex justify-between items-center 
-      transition-all duration-300 hover:bg-white/90"
+      className="w-full fixed top-1 z-50 sm:mx-1em 
+      bg-black backdrop-blur-md border border-gray-800 shadow-gray shadow-lg 
+      text-gray-100 px-6 py-3 flex justify-between items-center 
+      transition-all duration-300 hover:bg-black"
     >
       {/* Logo */}
-      <Link href="/">
-        <div
-          className="bg-gradient-to-r from-orange-500 to-pink-500 text-white 
-          rounded-[30px] px-4 py-2 text-2xl font-extrabold tracking-wide 
-          shadow-md hover:scale-110 shadow-yellow-200 transition-transform"
+      <Link href="/" className="block">
+        <h1
+          className="text-4xl sm:text-5xl md:text-5xl font-extrabold tracking-tight 
+          bg-clip-text text-transparent drop-shadow-2xl
+          bg-[conic-gradient(from_var(--angle),#d1d5db,#b45309,#d1d5db)]
+          animate-gradient-rotate
+          hover:scale-105 transition-transform duration-300 text-center sm:text-left"
         >
-          <h1> Symposium 2K25</h1>
-        </div>
+          Symposium 2k25
+        </h1>
       </Link>
 
       {/* Desktop Links */}
@@ -43,13 +46,13 @@ export default function Navbar() {
             <Link
               href={link.href}
               className={`
-                relative font-medium text-gray-700 transition-colors 
-                hover:text-orange-500
+                relative font-medium text-gray-100 transition-colors 
+                hover:text-orange-400
                 after:content-[''] after:absolute after:left-0 after:-bottom-1 
                 after:h-[2px] after:w-0 after:bg-orange-400 
                 after:transition-all after:duration-300
                 hover:after:w-full
-                ${pathname === link.href ? "text-orange-600 after:w-full" : ""}
+                ${pathname === link.href ? "text-orange-400 after:w-full" : ""}
               `}
             >
               {link.label}
@@ -61,13 +64,17 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant="ghost" size="icon" className="md:hidden ">
-            <Menu className="h-3 w-3" />
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden text-gray-100"
+          >
+            <Menu className="h-4 w-4" />
           </Button>
         </SheetTrigger>
         <SheetContent
-          side="left"
-          className="bg-white text-gray-800 border-r border-gray-200"
+          side="right"
+          className="bg-gray-950 text-gray-100 border-l border-gray-800"
         >
           <ul className="flex flex-col space-y-4 mt-12">
             {links.map((link) => (
@@ -75,16 +82,18 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   className={`
-                relative block top-8 font-medium  text-gray-800 transition-colors 
-                hover:text-orange-500
-                after:content-[''] after:absolute after:left-0 after:-bottom-1 
-                after:h-[2px] after:w-0 after:bg-orange-400 
-                after:transition-all after:duration-300
-                hover:after:w-full  
-                ${pathname === link.href ? "text-orange-600 after:w-full" : ""}
-              `}
+                  relative block top-8 font-medium text-gray-100 transition-colors 
+                  hover:text-orange-400
+                  after:content-[''] after:absolute after:left-0 after:-bottom-1 
+                  after:h-[2px] after:w-0 after:bg-orange-400 
+                  after:transition-all after:duration-300
+                  hover:after:w-full  
+                  ${
+                    pathname === link.href ? "text-orange-400 after:w-full" : ""
+                  }
+                `}
                 >
-                  <span className="bg-orange-50 text-center h-8 flex justify-center">
+                  <span className="bg-transparent text-center h-8 flex justify-center">
                     {link.label}
                     <br />
                   </span>

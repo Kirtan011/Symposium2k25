@@ -49,7 +49,7 @@ function SymposiumHeadCard({
 }: TeamCardProps) {
   // Size-based styles
   const sizeClasses = {
-    sm: "w-full max-w-[280px] p-4 text-sm",
+    sm: "w-full max-w-[290px] p-6 text-sm",
     md: "w-full max-w-[360px] p-6 text-base",
     lg: "w-full max-w-[420px] p-8 text-lg",
   };
@@ -62,15 +62,15 @@ function SymposiumHeadCard({
 
   return (
     <div
-      className={`relative bg-white/30 backdrop-blur-xl rounded-2xl shadow-xl flex flex-row items-center border border-gray-200 hover:shadow-2xl hover:-translate-y-1 transition-all group duration-300 ${sizeClasses[size]}`}
+      className={`relative bg-transparent backdrop-blur-xs rounded-2xl shadow-xl flex flex-row items-center border hover:border-gray-500 hover:shadow-2xl hover:-translate-y-1 transition-all group duration-300 ${sizeClasses[size]}`}
     >
       {/* Profile Image */}
-      <div className="flex-shrink-0 group-hover:scale-105 transition-all mr-6">
+      <div className="flex-shrink-0 group-hover:scale-105 transition-all mr-4">
         <div
           className={`${imageSize[size]} rounded-full bg-gradient-to-tr from-orange-400 to-pink-500 p-1`}
         >
           <img
-            className="w-full h-full rounded-full object-cover border-4 border-white"
+            className="w-full h-full rounded-full object-cover border-4 border-gray-900"
             src={img || "./Background.jpg"}
             alt={name}
           />
@@ -81,14 +81,14 @@ function SymposiumHeadCard({
       <div className="flex flex-col justify-center flex-grow space-y-2">
         {/* Name + Role */}
         <div>
-          <h2 className="text-xl font-bold text-gray-900">{name}</h2>
-          <p className="text-md text-orange-500 fira-sans-bold font-medium">
+          <h2 className="text-xl font-bold text-white">{name}</h2>
+          <p className="text-md text-orange-400 fira-sans-bold font-medium">
             {role}
           </p>
         </div>
 
         {/* Contact Info */}
-        <div className="space-y-1 text-sm text-gray-600">
+        <div className="space-y-1 text-sm text-gray-300">
           <p className="flex items-center flex-wrap break-words">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,7 @@ function SymposiumHeadCard({
                 strokeLinejoin="round"
                 strokeWidth={2}
                 d="M16 12H8m8-4H8m8 8H8m-2 4h12a2 2 0 002-2V6a2 2 0 
-        00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
               />
             </svg>
             <span className="break-words">{email}</span>
@@ -120,7 +120,7 @@ function SymposiumHeadCard({
                 strokeLinejoin="round"
                 strokeWidth={2}
                 d="M3 5h2l3.6 7.59a1 1 0 00.9.41h7a1 1 0 
-             00.9-.41L19 5H21M16 13v6H8v-6"
+                00.9-.41L19 5H21M16 13v6H8v-6"
               />
             </svg>
             {phone}

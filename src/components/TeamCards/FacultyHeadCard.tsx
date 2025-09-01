@@ -8,14 +8,14 @@ const facultyHeads = [
   },
   {
     name: "Prof. Vandana Shah",
-    role: " Faculty Co-coordinator",
+    role: " Faculty Coordinator",
     email: "priteshsaxena@example.com",
     phone: "01992931",
     img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
   },
   {
-    name: "Prof Prtiesh Saxena",
-    role: " Faculty Coordinator",
+    name: "Prof Chintan Panchal",
+    role: " Faculty Co-Coordinator",
     email: "priteshsaxena@example.com",
     phone: "01992931",
     img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
@@ -34,15 +34,15 @@ function FacultyHeadCard({ name, role, email, phone, img }: TeamCardProps) {
   return (
     <div
       className="relative w-full max-w-[360px] sm:w-[280px] md:w-[320px] lg:w-[340px] 
-  bg-gradient-to-b from-white/70 to-white/40 backdrop-blur-xl rounded-3xl shadow-lg 
-  border border-white/20 overflow-hidden hover:shadow-2xl hover:-translate-y-2 
+  bg-transparent backdrop-blur-xs rounded-3xl hover:border-gray-500 shadow-lg 
+  border border-gray-800 overflow-hidden hover:shadow-2xl hover:-translate-y-2 
   transition-all duration-300 group"
     >
       {/* Profile Image */}
       <div className="relative flex justify-center mt-6">
         <div className="w-28 h-28 rounded-full bg-gradient-to-tr from-orange-400 to-pink-500 p-[3px] shadow-lg group-hover:scale-105 transition-all">
           <img
-            className="w-full h-full rounded-full object-cover border-4 border-white"
+            className="w-full h-full rounded-full object-cover border-4 border-gray-900"
             src={img || "./Background.jpg"}
             alt={name}
           />
@@ -53,14 +53,14 @@ function FacultyHeadCard({ name, role, email, phone, img }: TeamCardProps) {
       <div className="p-6 text-center space-y-3">
         {/* Name + Role */}
         <div>
-          <h2 className="text-2xl font-bold text-gray-900">{name}</h2>
-          <p className="text-sm font-semibold text-orange-600 tracking-wide uppercase">
+          <h2 className="text-2xl font-bold text-white">{name}</h2>
+          <p className="text-sm font-semibold text-orange-400 tracking-wide uppercase">
             {role}
           </p>
         </div>
 
         {/* Contact Info */}
-        <div className="space-y-2 text-sm text-gray-700">
+        <div className="space-y-2 text-sm text-gray-300">
           <p className="flex items-center justify-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ function FacultyHeadCard({ name, role, email, phone, img }: TeamCardProps) {
                 strokeLinejoin="round"
                 strokeWidth={2}
                 d="M16 12H8m8-4H8m8 8H8m-2 4h12a2 2 0 002-2V6a2 2 0 
-             00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
               />
             </svg>
             <span>{email}</span>
@@ -92,7 +92,7 @@ function FacultyHeadCard({ name, role, email, phone, img }: TeamCardProps) {
                 strokeLinejoin="round"
                 strokeWidth={2}
                 d="M3 5h2l3.6 7.59a1 1 0 00.9.41h7a1 1 0 
-             00.9-.41L19 5H21M16 13v6H8v-6"
+                00.9-.41L19 5H21M16 13v6H8v-6"
               />
             </svg>
             <span>{phone}</span>
