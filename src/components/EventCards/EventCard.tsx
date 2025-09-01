@@ -4,42 +4,42 @@ import "@/app/globals.css";
 
 const eventData = [
   {
-    img: "/Symposium_2k25.jpg",
+    img: "/Posters/Symposium_2k25.jpg",
     formLink: "#",
     tagline: "Beyond Languages, Towards Logic",
   },
   {
-    img: "/Symposium_2k25.jpg",
+    img: "/Posters/Symposium_2k25.jpg",
     formLink: "#",
     tagline: "The Future of Electronics",
   },
   {
-    img: "/Symposium_2k25.jpg",
+    img: "/Posters/Symposium_2k25.jpg",
     formLink: "#",
     tagline: "Beyond Languages, Towards Logic",
   },
   {
-    img: "/Symposium_2k25.jpg",
+    img: "/Posters/Symposium_2k25.jpg",
     formLink: "#",
     tagline: "The Future of Electronics",
   },
   {
-    img: "/Symposium_2k25.jpg",
+    img: "/Posters/Symposium_2k25.jpg",
     formLink: "#",
     tagline: "Beyond Languages, Towards Logic",
   },
   {
-    img: "/Symposium_2k25.jpg",
+    img: "/Posters/Symposium_2k25.jpg",
     formLink: "#",
     tagline: "The Future of Electronics",
   },
   {
-    img: "/Symposium_2k25.jpg",
+    img: "/Posters/Symposium_2k25.jpg",
     formLink: "#",
     tagline: "Beyond Languages, Towards Logic",
   },
   {
-    img: "/Symposium_2k25.jpg",
+    img: "/Posters/Symposium_2k25.jpg",
     formLink: "#",
     tagline: "The Future of Electronics",
   },
