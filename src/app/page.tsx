@@ -36,7 +36,7 @@ export default function Home() {
           <p className="text-gray-300 text-lg sm:text-xl md:text-2xl">
             ⚙️{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-yellow-200 to-blue-200">
-              "Beyond Languages, Towards Logic"
+              &quotBeyond Languages, Towards Logic&quot
             </span>
           </p>
 
