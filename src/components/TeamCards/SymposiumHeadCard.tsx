@@ -19,7 +19,7 @@ const symposiumHeads = [
     role: "Student Head",
     email: "muditsaboo.ec22@scet.ac.in",
     phone: "9724616989",
-    img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
+    img: "/Peoples/Mudit.png",
   },
   {
     name: "Manasvi Mehta",
