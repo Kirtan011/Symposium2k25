@@ -1,23 +1,23 @@
 const facultyHeads = [
   {
-    name: "Prof. Prtiesh Saxena",
+    name: "Dr. Vandana Shah",
     role: " Faculty Coordinator",
-    email: "priteshsaxena@example.com",
-    phone: "01992931",
+    email: "vandana.shah@scet.ac.in",
+    phone: "7874359882",
     img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
   },
   {
-    name: "Prof. Vandana Shah",
+    name: "Prof. Prtiesh Saxena",
     role: " Faculty Coordinator",
-    email: "priteshsaxena@example.com",
-    phone: "01992931",
+    email: "pritesh.saxena@scet.ac.in",
+    phone: "9979573245",
     img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
   },
   {
     name: "Prof Chintan Panchal",
     role: " Faculty Co-Coordinator",
-    email: "priteshsaxena@example.com",
-    phone: "01992931",
+    email: "chintan.panchal@scet.ac.in",
+    phone: "9909152281",
     img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
   },
 ];

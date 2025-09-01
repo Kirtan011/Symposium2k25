@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <nav
       className="w-full fixed top-1 z-50 sm:mx-1em 
-      bg-black backdrop-blur-md border border-gray-800 shadow-gray shadow-lg 
+      bg-tranparent backdrop-blur-3xl border border-gray-800 shadow-gray shadow-lg 
       text-gray-100 px-6 py-3 flex justify-between items-center 
       transition-all duration-300 hover:bg-black"
     >

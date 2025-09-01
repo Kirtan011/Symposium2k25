@@ -2,28 +2,28 @@
 const symposiumHeads = [
   {
     name: "Vani Shekhadia",
-    role: "Symposium Head",
+    role: "Student Head",
     email: "vanishekadia.ec22@scet.ac.in",
     phone: "7698964335",
     img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
   },
   {
     name: "Dushyant Prajapati",
-    role: "Symposium Head",
+    role: "Student Head",
     email: "dushyantprajapati.ec22@scet.ac.in",
     phone: "6359394168",
-    img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
+    img: "/Peoples/Dushyant.png",
   },
   {
     name: "Mudit Saboo",
-    role: "Symposium Head",
+    role: "Student Head",
     email: "muditsaboo.ec22@scet.ac.in",
     phone: "9724616989",
     img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
   },
   {
     name: "Manasvi Mehta",
-    role: "Symposium Head",
+    role: "Student Head",
     email: "manasvimehta.ec22@scet.ac.in",
     phone: "9313371485",
     img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
