@@ -18,17 +18,17 @@ export default function Navbar() {
 
   return (
     <nav
-      className="w-full fixed top-1 z-50 sm:mx-1em 
-      bg-tranparent backdrop-blur-3xl border border-gray-800 shadow-gray shadow-lg 
+      className="w-full fixed z-50 sm:mx-1em 
+      bg-tranparent backdrop-blur-xs border border-gray-800 shadow-gray shadow-lg 
       text-gray-100 px-6 py-3 flex justify-between items-center 
-      transition-all duration-300 hover:bg-black"
+      transition-all duration-300 hover:bg-black "
     >
       {/* Logo */}
       <Link href="/" className="block">
         <h1
           className="text-4xl sm:text-5xl md:text-5xl font-extrabold tracking-tight 
           bg-clip-text text-transparent drop-shadow-2xl
-          bg-[conic-gradient(from_var(--angle),#d1d5db,#b45309,#d1d5db)]
+          bg-[conic-gradient(from_var(--angle),#000000,#b45309,#d1d5db)]
           animate-gradient-rotate
           hover:scale-105 transition-transform duration-300 text-center sm:text-left"
         >

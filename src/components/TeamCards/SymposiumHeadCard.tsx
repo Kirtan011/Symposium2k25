@@ -2,31 +2,31 @@
 const symposiumHeads = [
   {
     name: "Vani Shekhadia",
-    role: "Student Head",
+    role: "Student Coordinator",
     email: "vanishekadia.ec22@scet.ac.in",
     phone: "7698964335",
-    img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
+    img: "/Peoples/Vani.png",
   },
   {
     name: "Dushyant Prajapati",
-    role: "Student Head",
+    role: "Student Coordinator",
     email: "dushyantprajapati.ec22@scet.ac.in",
     phone: "6359394168",
     img: "/Peoples/Dushyant.png",
   },
   {
     name: "Mudit Saboo",
-    role: "Student Head",
+    role: "Student Coordinator",
     email: "muditsaboo.ec22@scet.ac.in",
     phone: "9724616989",
     img: "/Peoples/Mudit.png",
   },
   {
     name: "Manasvi Mehta",
-    role: "Student Head",
+    role: "Student Coordinator",
     email: "manasvimehta.ec22@scet.ac.in",
     phone: "9313371485",
-    img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
+    img: "/Peoples/Manasvi.png",
   },
 ];
 
@@ -62,12 +62,12 @@ function SymposiumHeadCard({
 
   return (
     <div
-      className={`relative bg-transparent backdrop-blur-xs rounded-2xl shadow-xl flex flex-row items-center border hover:border-gray-500 hover:shadow-2xl hover:-translate-y-1 transition-all group duration-300 ${sizeClasses[size]}`}
+      className={`relative bg-transparent backdrop-blur-none rounded-2xl shadow-xl flex flex-row items-center border-2   hover:border-gray-500 hover:shadow-2xl hover:-translate-y-1 transition-all group duration-300 ${sizeClasses[size]}`}
     >
       {/* Profile Image */}
       <div className="flex-shrink-0 group-hover:scale-105 transition-all mr-4">
         <div
-          className={`${imageSize[size]} rounded-full bg-gradient-to-tr from-orange-400 to-pink-500 p-1`}
+          className={`${imageSize[size]} rounded-full bg-gradient-to-tr from-white to-black p-[2px]`}
         >
           <img
             className="w-full h-full rounded-full object-cover border-4 border-gray-900"

@@ -4,21 +4,21 @@ const facultyHeads = [
     role: " Faculty Coordinator",
     email: "vandana.shah@scet.ac.in",
     phone: "7874359882",
-    img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
+    img: "/Peoples/VandanaMam.png",
   },
   {
-    name: "Prof. Prtiesh Saxena",
+    name: "Prof. Pritesh Saxena",
     role: " Faculty Coordinator",
     email: "pritesh.saxena@scet.ac.in",
     phone: "9979573245",
-    img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
+    img: "/Peoples/PriteshSir.png",
   },
   {
     name: "Prof Chintan Panchal",
     role: " Faculty Co-Coordinator",
     email: "chintan.panchal@scet.ac.in",
     phone: "9909152281",
-    img: "https://img.freepik.com/premium-vector/man-professional-business-casual-young-avatar-icon-illustration_1277826-623.jpg",
+    img: "/Peoples/ChintanSir.png",
   },
 ];
 
@@ -34,13 +34,13 @@ function FacultyHeadCard({ name, role, email, phone, img }: TeamCardProps) {
   return (
     <div
       className="relative w-full max-w-[360px] sm:w-[280px] md:w-[320px] lg:w-[340px] 
-  bg-transparent backdrop-blur-xs rounded-3xl hover:border-gray-500 shadow-lg 
+  bg-transparent backdrop-blur-none rounded-3xl hover:border-gray-500 shadow-lg 
   border border-gray-800 overflow-hidden hover:shadow-2xl hover:-translate-y-2 
-  transition-all duration-300 group"
+  transition-all duration-300 group "
     >
       {/* Profile Image */}
       <div className="relative flex justify-center mt-6">
-        <div className="w-28 h-28 rounded-full bg-gradient-to-tr from-orange-400 to-pink-500 p-[3px] shadow-lg group-hover:scale-105 transition-all">
+        <div className="w-28 h-28 rounded-full bg-gradient-to-tr from-white to-black p-[2px] hover:to-black shadow-lg group-hover:scale-105 transition-all">
           <img
             className="w-full h-full rounded-full object-cover border-4 border-gray-900"
             src={img || "./Background.jpg"}
@@ -101,7 +101,7 @@ function FacultyHeadCard({ name, role, email, phone, img }: TeamCardProps) {
       </div>
 
       {/* Glow Line at Bottom */}
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 via-pink-500 to-red-500"></div>
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-gray-500 via-black to-gray-500"></div>
     </div>
   );
 }

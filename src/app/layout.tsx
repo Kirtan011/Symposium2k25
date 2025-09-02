@@ -23,7 +23,9 @@ export default function RootLayout({
           <div className="container mx-auto px-6 py-6 flex flex-col items-center space-y-4">
             {/* Center - Branding */}
             <div className="text-xs text-gray-300 text-right  tracking-wide">
-              <p className="text-sm text-gray-400">Made by Kirtan Suthar</p>
+              <p className="text-sm text-gray-400">
+                Designed and developed by Kirtan Suthar
+              </p>
             </div>
 
             {/* Socials */}
