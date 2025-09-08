@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "../components/ui/navbar";
 import ParticlesBackground from "@/components/ui/Background";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function RootLayout({
   children,
@@ -19,12 +20,16 @@ export default function RootLayout({
           <Navbar />
         </header>
         <main className="min-h-screen">{children}</main>
-        <footer className="bg-gray-950 backdrop-blur-lg border-t border-gray-700 text-gray-300 mt-10">
+        <footer className="bg-transparent backdrop-blur-xs border-t border-gray-600 text-gray-300 mt-10">
           <div className="container mx-auto px-6 py-6 flex flex-col items-center space-y-4">
             {/* Center - Branding */}
             <div className="text-xs text-gray-300 text-right  tracking-wide">
-              <p className="text-sm text-gray-400">
-                Designed and developed by Kirtan Suthar
+              <p className=" flex relative  text-sm text-gray-400">
+                Designed and developed by&nbsp;<b>Kirtan Suthar</b>
+                <img
+                  src="/Peoples/Kirtan.png"
+                  className="absolute left-[280px] -top-[10px] w-10 border-2 border-white  h-10 rounded-[100%]"
+                />
               </p>
             </div>
 

@@ -26,9 +26,9 @@ export default function Navbar() {
       {/* Logo */}
       <Link href="/" className="block">
         <h1
-          className="text-4xl sm:text-5xl md:text-5xl font-extrabold tracking-tight 
+          className="text-4xl sm:text-5xl md:text-5xl font-extrabold tracking-tighter 
           bg-clip-text text-transparent drop-shadow-2xl
-          bg-[conic-gradient(from_var(--angle),#000000,#b45309,#d1d5db)]
+          bg-[conic-gradient(from_var(--angle),#ffffff,#b45309,#ffffff)]
           animate-gradient-rotate
           hover:scale-105 transition-transform duration-300 text-center sm:text-left"
         >
@@ -74,7 +74,7 @@ export default function Navbar() {
         </SheetTrigger>
         <SheetContent
           side="right"
-          className="bg-gray-950 text-gray-100 border-l border-gray-800"
+          className="bg-black text-gray-100 border-l border-gray-800"
         >
           <ul className="flex flex-col space-y-4 mt-12">
             {links.map((link) => (

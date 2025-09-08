@@ -53,7 +53,7 @@ type PosterProp = {
 
 const EventCard = ({ img, formLink, tagline }: PosterProp) => {
   return (
-    <section className="relative p-[1px] rounded-xl bg-[conic-gradient(from_var(--angle),#000e00,#000001,#000000,gray,#000000)] hover:bg-[conic-gradient(from_var(--angle),#000e00,#000001,#000000,orange,#000000)] animate-gradient-rotate ">
+    <section className="relative p-[1px] rounded-xl bg-[conic-gradient(from_var(--angle),#000e00,#000001,#000000,gray,#000000)] hover:bg-[conic-gradient(from_var(--angle),orange,#000001,orange,orange)] animate-gradient-rotate ">
       {/* Inner Card */}
       <div className=" relative flex flex-col  rounded-xl bg-black  shadow-md overflow-hidden transition-all duration-300  group">
         {/* Image */}
@@ -73,13 +73,13 @@ const EventCard = ({ img, formLink, tagline }: PosterProp) => {
               {tagline}
             </p>
           )}
-          <div className="relative p-[1px] rounded-2xl bg-[conic-gradient(from_var(--angle),#000e00,powderblue,#000000,#000000)] hover:bg-[conic-gradient(from_var(--angle),#000e00,violet,#000000,#000000)] hover:scale-105 transition-all transform  animate-gradient-rotate ">
-            <Button className="w-full font-bold bg-black  hover:bg-black rounded-2xl text-white shadow-md">
-              <a href={formLink} target="_blank">
+          <a href={formLink} target="_blank">
+            <div className="relative rounded-lg  p-[1px] bg-[conic-gradient(from_var(--angle),#000e00,powderblue,#000000,#000000)] hover:bg-[conic-gradient(from_var(--angle),gray,white,#000000,#000000)] hover:scale-105 transition-all transform  animate-gradient-rotate ">
+              <Button className="w-full rounded-lg cursor-pointer font-bold bg-black  hover:bg-black text-white shadow-md">
                 Register Now
-              </a>
-            </Button>
-          </div>
+              </Button>
+            </div>
+          </a>
         </div>
       </div>
     </section>

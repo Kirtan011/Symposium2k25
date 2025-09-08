@@ -57,7 +57,8 @@ export default function Home() {
           alt="TechFest Poster"
           width={900}
           height={450}
-          className="rounded-3xl shadow-2xl object-cover"
+          className="rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-gray-200 
+           transition-shadow duration-500 ease-in-out object-cover"
         />
       </section>
     </main>
