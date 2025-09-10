@@ -1,3 +1,5 @@
+"use client";
+
 import {
   techEventData,
   nonTechEventData,
@@ -8,20 +10,11 @@ import "@/app/globals.css";
 
 const allEvents = [...techEventData, ...nonTechEventData];
 
-// This function tells Next.js which dynamic paths to pre-render.
-// It will be executed at build time.
-export async function generateStaticParams() {
-  return allEvents.map((event) => ({
-    id: event.id,
-  }));
-}
-
 export default function EventDetailPage({
   params,
 }: {
   params: { id: string };
 }) {
-  // Access params.id directly
   const event = allEvents.find((e) => e.id === params.id);
 
   if (!event) {
@@ -33,8 +26,8 @@ export default function EventDetailPage({
   }
 
   return (
-    <main className="pt-24 px-6 text-white max-w-3xl mx-auto animate-fadeInSlideUp">
-      <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-6 text-orange">
+    <main className="pt-24 px-6  text-white max-w-3xl mx-auto animate-fadeInSlideUp">
+      <h1 className="text-3xl md:text-4xl border-2 font-extrabold text-center mb-6 text-orange">
         {event.id}
       </h1>
 
