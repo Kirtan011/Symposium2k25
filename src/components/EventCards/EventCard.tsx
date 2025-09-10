@@ -36,7 +36,8 @@ const techEventData = [
     id: "TechnoSamvad",
     img: "/Posters/Tech_TechnoSamvad.jpeg",
     tagline: "💡 Talk Tech Today",
-    formLink: "https://forms.gle/technosamvad123",
+    formLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeBODjvhAgoctoWt-1Vo4gx9CvRtlR_YET8K7J8DtbMr2bThg/viewform",
     rules: [
       "--------------------------------",
       "📝 Round 1: Aptitude Test",
@@ -136,7 +137,8 @@ const techEventData = [
     id: "CircuitChakra",
     img: "/Posters/Tech_CircuitChakra.jpg",
     tagline: "🔌 Power The Circuit",
-    formLink: "https://forms.gle/circuitchakra123",
+    formLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfsSAyrhnP3bO4QKmnRrZCbCYyYiYeFSqM9RaTP7SDM7k3ChA/viewform",
     rules: [
       "-----------------------------------",
       "Round 1: Quick Spark (Individual)",
@@ -212,7 +214,8 @@ const nonTechEventData = [
     id: "MastiManch",
     img: "/Posters/NonTech_MastiManch.jpg",
     tagline: "🎉 Stage Full Fun",
-    formLink: "https://forms.gle/mastimanch123",
+    formLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeDRyQMuSi9I12ZF7UHg93uM2_bM_zRh1x0MySZv3WEZqT_pA/viewform",
     rules: [
       "------------------------------",
       "🤣 Round 1: Questionnaire",
