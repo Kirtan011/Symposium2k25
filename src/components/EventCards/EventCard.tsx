@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import "@/app/globals.css";
+import Link from "next/link";
+
+// Inside EventCard component:
 
 const techEventData = [
   {
@@ -168,14 +171,14 @@ type PosterProp = {
 
 const EventCard = ({ img, id, tagline }: PosterProp) => {
   return (
-    <section className="relative p-[1px] rounded-xl bg-[conic-gradient(from_var(--angle),#000e00,#000001,#000000,gray,#000000)] hover:bg-[conic-gradient(from_var(--angle),orange,#000001,lightblue,orange)] animate-gradient-rotate ">
-      <div className=" relative flex flex-col  rounded-xl bg-black  shadow-md overflow-hidden transition-all duration-300  group">
-        <div className="relative flex justify-center h-100">
+    <section className="relative p-[1px] rounded-xl bg-[conic-gradient(from_var(--angle),#000e00,#000001,#000000,gray,#000000)] hover:bg-[conic-gradient(from_var(--angle),orange,#000001,lightblue,orange)] animate-gradient-rotate">
+      <div className="relative flex flex-col rounded-xl bg-black shadow-md overflow-hidden transition-all duration-300 group">
+        <div className="relative flex justify-center h-[24rem]">
           <Image
             src={img}
-            alt="Event Poster"
+            alt={`Poster for ${id}`}
             fill
-            className="object-contain saturate-30 hover:scale-106 hover:translate-y-[10px] top-1 rounded-t-2xl transition-all duration-300 group-hover:saturate-100"
+            className="object-contain saturate-30 hover:scale-105 hover:translate-y-[10px] rounded-t-2xl transition-all duration-300 group-hover:saturate-100"
           />
         </div>
 
@@ -185,13 +188,15 @@ const EventCard = ({ img, id, tagline }: PosterProp) => {
               {tagline}
             </p>
           )}
-          <a href={`/events/${id}`} target="_blank">
-            <div className="relative rounded-lg  p-[1px] bg-[conic-gradient(from_var(--angle),#000e00,powderblue,#000000,#000000)] hover:bg-[conic-gradient(from_var(--angle),gray,white,#000000,#000000)] hover:scale-105 transition-all transform  animate-gradient-rotate ">
-              <Button className="w-full rounded-lg cursor-pointer font-bold bg-black  hover:bg-black text-white shadow-md">
+          <Link href={`/events/${id}`}>
+            {" "}
+            {/* lowercase to match folder name */}
+            <div className="relative rounded-lg p-[1px] bg-[conic-gradient(from_var(--angle),#000e00,powderblue,#000000,#000000)] hover:bg-[conic-gradient(from_var(--angle),gray,white,#000000,#000000)] hover:scale-105 transition-all transform animate-gradient-rotate">
+              <Button className="w-full rounded-lg cursor-pointer font-bold bg-black hover:bg-black text-white shadow-md">
                 Know more...
               </Button>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
