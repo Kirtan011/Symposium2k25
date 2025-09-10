@@ -107,7 +107,8 @@ const techEventData = [
     id: "SutraSync",
     img: "/Posters/Tech_SutraSync.jpg",
     tagline: "✨ Crack The Mystery",
-    formLink: "https://forms.gle/sutrasync123",
+    formLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSf5SlIil0TjEm-HqWtom_7yXcOZCeVUUXyKD_sIbyVwKIVN3w/viewform",
     rules: [
       "---------------------------",
       " Round 1: Symbol Sleuths",
@@ -178,7 +179,8 @@ const nonTechEventData = [
     id: "LaserStrike",
     img: "/Posters/NonTech_LaserStrike.jpg",
     tagline: "🎯 Aim Shoot Score",
-    formLink: "https://forms.gle/laserstrike123",
+    formLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSd7H-wxDzNAOhVhXKSpPKmN4OZrvPOGtiDCBF54FpK5VXw6Xw/closedform",
     rules: [
       "------------------------------------",
       "Round 1: Laser Targeting (Duo)",
@@ -242,7 +244,8 @@ const nonTechEventData = [
     id: "RahashyaSanket",
     img: "/Posters/NonTech_RahasyahSanket.jpg",
     tagline: "🕵️ Crack Hidden Clues",
-    formLink: "https://forms.gle/rahashyasanket123",
+    formLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeG4OTpKufIoga9FoVvAbDO8kG08sTo4BCRFYj8mmr5hr7p6Q/closedform",
     rules: [
       "------------------------------",
       "Round 1: Morse Race Lite",
