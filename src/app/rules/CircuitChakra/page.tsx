@@ -1,40 +1,28 @@
-"use client"; // required if you want to use React.use
+"use client";
 
-import * as React from "react";
-import {
-  techEventData,
-  nonTechEventData,
-} from "@/components/EventCards/EventCard";
+import { techEventData } from "@/components/EventCards/EventCard";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
-const allEvents = [...techEventData, ...nonTechEventData];
+const event = techEventData.find((e) => e.id === "CircuitChakra");
 
-type Props = {
-  params: { id: string } | Promise<{ id: string }>;
-};
-
-export default function EventDetailPage({ params }: Props) {
-  const { id } = React.use(params);
-
-  const event = allEvents.find((e) => e.id.toLowerCase() === id.toLowerCase());
-
-  if (!event) {
+export default function CodeVedaPage() {
+  if (!event)
     return (
       <div className="text-white text-center mt-20">🚨 Event not found</div>
     );
-  }
 
   return (
     <main className="pt-24 px-6 text-white max-w-3xl mx-auto animate-fadeInSlideUp">
-      <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-6 text-orange">
+      <h1 className="text-3xl border-2 md:text-4xl font-extrabold text-center mb-6 text-orange">
         {event.id}
       </h1>
 
       <div className="relative border-2 w-full h-[32rem] mb-6">
         <Image
           src={event.img}
-          alt={`Poster for ${event.id}`}
+          alt={event.id}
           fill
           className="object-contain rounded-xl shadow-lg"
         />
@@ -55,14 +43,22 @@ export default function EventDetailPage({ params }: Props) {
         </ul>
       </section>
 
-      <div className="flex justify-center">
-        <a href={event.formLink} target="_blank" rel="noopener noreferrer">
+      <div className="flex justify-center mb-6">
+        <a href={event.formLink} target="_blank">
           <div className="w-full p-[1px] rounded-lg bg-[conic-gradient(from_var(--angle),#000e00,white,powderblue,orange,#000000)] hover:scale-105 transition-all transform animate-gradient-rotate">
             <Button className="w-full rounded-lg cursor-pointer font-bold bg-black hover:bg-black text-white shadow-md">
               Register Now
             </Button>
           </div>
         </a>
+      </div>
+
+      <div className="flex justify-center">
+        <Link href="/">
+          <Button className="bg-black text-white hover:bg-gray-800 w-full sm:w-64">
+            Back to Events
+          </Button>
+        </Link>
       </div>
     </main>
   );

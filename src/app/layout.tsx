@@ -20,7 +20,7 @@ export default function RootLayout({
         <footer className="bg-transparent backdrop-blur-xs border-t border-gray-600 text-gray-300 mt-10">
           <div className="container mx-auto px-6 py-6 flex flex-col items-center space-y-4">
             <div className="relative flex items-center text-sm text-gray-400">
-              Designed and developed by <b>Kirtan Suthar</b>
+              Designed and developed by <b> Kirtan Suthar</b>
               <img
                 src="/Peoples/Kirtan.png"
                 className="absolute left-[280px] -top-[10px] w-10 h-10 border-2 border-white rounded-full"
