@@ -53,7 +53,7 @@ export default function Home() {
       {/* Hero Image */}
       <section className="w-full flex justify-center mt-12">
         <Image
-          src="/Posters/Symposium_2k25.jpg"
+          src="/Posters/Symposium_2K25.png"
           alt="TechFest Poster"
           width={900}
           height={450}
