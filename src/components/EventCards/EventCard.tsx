@@ -34,7 +34,7 @@ const techEventData = [
   },
   {
     id: "TechnoSamvad",
-    img: "/Posters/Tech_TechnoSamvad.jpg",
+    img: "/Posters/Tech_TechnoSamvad.jpeg",
     tagline: "💡 Talk Tech Today",
     formLink: "https://forms.gle/technosamvad123",
     rules: [
@@ -133,7 +133,7 @@ const techEventData = [
   },
   {
     id: "CircuitChakra",
-    img: "/Posters/Tech_circuitChakra.jpg",
+    img: "/Posters/Tech_CircuitChakra.jpg",
     tagline: "🔌 Power The Circuit",
     formLink: "https://forms.gle/circuitchakra123",
     rules: [
