@@ -15,7 +15,7 @@ export default function CodeVedaPage() {
 
   return (
     <main className="pt-24 px-6 text-white max-w-3xl mx-auto animate-fadeInSlideUp">
-      <h1 className="text-3xl  border-2 md:text-4xl font-extrabold text-center mb-6 text-orange">
+      <h1 className="text-3xl border-2 md:text-4xl font-extrabold text-center mb-6 text-orange">
         {event.id}
       </h1>
 

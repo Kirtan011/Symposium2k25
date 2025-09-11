@@ -67,7 +67,7 @@ const techEventData = [
   },
   {
     id: "GanitVerse",
-    img: "/Posters/Tech_GanitVerse.jpg",
+    img: "/Posters/Tech_GanitVerse.png",
     tagline: "🔢 Numbers Made Fun",
     formLink: "https://forms.gle/ganitverse123",
     rules: [
