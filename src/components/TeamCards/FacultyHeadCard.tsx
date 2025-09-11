@@ -1,6 +1,6 @@
 const facultyHeads = [
   {
-    name: "Dr. Vandana Shah",
+    name: "Prof. Vandana Shah",
     role: " Faculty Coordinator",
     email: "vandana.shah@scet.ac.in",
     phone: "7874359882",
@@ -14,7 +14,7 @@ const facultyHeads = [
     img: "/Peoples/PriteshSir.png",
   },
   {
-    name: "Prof Chintan Panchal",
+    name: "Prof. Chintan Panchal",
     role: " Faculty Co-Coordinator",
     email: "chintan.panchal@scet.ac.in",
     phone: "9909152281",

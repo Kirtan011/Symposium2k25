@@ -21,7 +21,9 @@ function HeadofDepartmentCard() {
       <div className="p-6 text-center space-y-3">
         {/* Name + Role */}
         <div>
-          <h2 className="text-2xl font-bold text-white">Dr. Chirag Paunwala</h2>
+          <h2 className="text-2xl font-bold text-white">
+            Prof. Chirag Paunwala
+          </h2>
           <p className="text-sm font-semibold text-orange-400 tracking-wide uppercase">
             Head Of Department
           </p>

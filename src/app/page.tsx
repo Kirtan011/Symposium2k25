@@ -7,13 +7,52 @@ export default function Home() {
     <main className="relative w-full min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-12 py-16">
       {/* Logo Section */}
       <div>
+        <div className="absolute top-20 left-20 transform -translate-x-1/2 sm:top-8">
+          <Image
+            src="/Logos/SU.png"
+            alt="TechFest Logo"
+            width={100}
+            height={100}
+            className="sm:ml-8 ml-1/2 w-20 h-40 sm:w-40 sm:h-40 animate-fadeIn"
+          />
+        </div>
+
+        <div className="absolute top-20 left-1/4 transform -translate-x-1/2 sm:top-8">
+          <Image
+            src="/Logos/ses_Logo.png"
+            alt="TechFest Logo"
+            width={100}
+            height={100}
+            className="sm:ml-8 ml-1/2 w-20 h-40 sm:w-40 sm:h-40 animate-fadeIn"
+          />
+        </div>
         <div className="absolute top-20 left-1/2 transform -translate-x-1/2 sm:top-8">
           <Image
             src="/Logos/kshitij_logo.png"
             alt="TechFest Logo"
+            width={100}
+            height={100}
+            className="sm:ml-8 ml-1/2 w-78 h-40 sm:w-78 sm:h-48 animate-fadeIn"
+          />
+        </div>
+
+        <div className="absolute top-20 left-3/4 transform -translate-x-1/2 sm:top-8">
+          <Image
+            src="/Logos/Symposium_original.png"
+            alt="TechFest Logo"
             width={350}
             height={100}
-            className="sm:ml-8 ml-1/2 w-78 h-40 sm:w-80 sm:h-48 animate-fadeIn"
+            className="sm:ml-8 ml-1/2 w-40 h-40 sm:w-40  sm:h-40 animate-fadeIn"
+          />
+        </div>
+
+        <div className="absolute top-20 left-350 transform -translate-x-1/2 sm:top-8">
+          <Image
+            src="/Logos/Scet_Logo.png"
+            alt="TechFest Logo"
+            width={100}
+            height={100}
+            className="sm:ml-8 ml-1/2 w-40 h-40 sm:w-50 sm:h-40 animate-fadeIn"
           />
         </div>
 
@@ -35,8 +74,8 @@ export default function Home() {
 
           <p className="text-gray-300 text-lg sm:text-xl md:text-2xl">
             ⚙️{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-yellow-200 to-blue-200">
-              &quot;Beyond Languages, Towards Logic&quot;
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-yellow-200 to-blue-200">
+              &quot;Beyond Scripts, From Sanskrit to Silicon&quot;
             </span>
           </p>
 
@@ -60,6 +99,35 @@ export default function Home() {
           className="rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-gray-200 
            transition-shadow duration-500 ease-in-out object-cover"
         />
+      </section>
+
+      <hr className="my-12 border-t-2 border-gray-600 opacity-50" />
+
+      <section>
+        <h1 className="sm:mb-12 text-4xl sm:text-5xl md:text-5xl font-extrabold tracking-tight text-gray-200 leading-tight">
+          Our Worthy Sponsors
+          <br />
+        </h1>
+        <div className="relative">
+          <div className="absolute top-20 left-1/2 transform -translate-x-1/2 sm:top-8">
+            <Image
+              src="/Logos/IETE.png"
+              alt="TechFest Logo"
+              width={100}
+              height={100}
+              className="sm:ml-8 ml-1/2 w-20 h-40 sm:w-40 sm:h-40 animate-fadeIn"
+            />
+          </div>
+          <div className="absolute top-20 left-1/4 transform -translate-x-1/2 sm:top-8">
+            <Image
+              src="/Logos/IEEE.png"
+              alt="TechFest Logo"
+              width={100}
+              height={100}
+              className="sm:ml-8 ml-1/2 w-20 h-40 sm:w-40 sm:h-40 animate-fadeIn"
+            />
+          </div>
+        </div>
       </section>
     </main>
   );
