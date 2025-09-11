@@ -246,7 +246,7 @@ const nonTechEventData = [
   },
   {
     id: "RahashyaSanket",
-    img: "/Posters/NonTech_RahasyahSanket.jpg",
+    img: "/Posters/NonTech_RahashyaSanket.jpg",
     tagline: "🕵️ Crack Hidden Clues",
     formLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScr5hxsLbtsG2M-PzLcyDzUVj_AEjTrhTWJFIKe6O5MLPn2Mg/viewform?usp=dialog",
