@@ -1,48 +1,50 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
     <main className="relative w-full min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-12 py-16">
       {/* Logo Section */}
-      <div className="w-full flex flex-wrap justify-center items-center gap-6 mb-2">
+      <div className="w-full flex justify-between px-0 items-center  sm:p-0">
         <Image
           src="/Logos/SU.png"
           alt="SU Logo"
           width={80}
           height={80}
-          className="w-16 sm:w-28 h-auto animate-fadeIn"
+          className="w-11 sm:w-30 h-auto animate-fadeIn"
         />
         <Image
           src="/Logos/ses_Logo.png"
           alt="SES Logo"
           width={80}
           height={80}
-          className="w-16 sm:w-28 h-auto animate-fadeIn"
+          className="w-11 sm:w-30 h-auto animate-fadeIn"
         />
         <Image
           src="/Logos/kshitij_logo.png"
           alt="Kshitij Logo"
           width={120}
           height={120}
-          className="w-24 sm:w-70 h-auto animate-fadeIn"
+          className="w-45 sm:w-70  h-auto animate-fadeIn ml-5"
         />
         <Image
           src="/Logos/Symposium_original.png"
           alt="Symposium Logo"
           width={150}
           height={80}
-          className="w-20 sm:w-32 h-auto animate-fadeIn"
+          className="w-11 sm:w-28 h-auto animate-fadeIn"
         />
         <Image
           src="/Logos/Scet_Logo.png"
           alt="SCET Logo"
           width={80}
           height={80}
-          className="w-16 sm:w-28 h-auto animate-fadeIn"
+          className="w-11 sm:w-30 h-auto animate-fadeIn"
         />
       </div>
+      <hr className=" border-t-2 border-gray-600  sm:w-1/5 opacity-50" />
 
       {/* Hero Section */}
       <section className="flex flex-col items-center gap-6 max-w-4xl">
@@ -53,25 +55,32 @@ export default function Home() {
             alt="TechFest Logo"
             width={800}
             height={140}
-            className="mx-auto w-72 sm:w-96 md:w-[32rem] h-auto animate-fadeInSlideUp"
+            className="mx-auto mt-5 w-100 sm:w-96 md:w-[37rem] h-auto animate-fadeInSlideUp"
           />
         </h1>
 
         {/* Animated Accent Line */}
         <div className="w-32 h-1 bg-gradient-to-r from-amber-700 via-yellow-500 to-orange-400 rounded-full animate-pulse my-4"></div>
 
-        <p className="text-gray-300 text-lg sm:text-xl md:text-2xl">
-          ⚙️{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-yellow-200 to-blue-200">
-            &quot;Beyond Scripts, From Sanskrit to Silicon&quot;
+        <p className="text-gray-300 border-1 text-lg sm:text-xl md:text-3xl">
+          <span>
+            <i>
+              &quot;Beyond Scripts, From{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-white to-blue-400">
+                Sanskrit to Silicon
+              </span>
+              &quot;
+            </i>
           </span>
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 mt-6">
           <Link href="/events">
-            <button className="px-6 py-2 cursor-pointer bg-amber-900 text-white font-semibold rounded-xl shadow-xl hover:bg-amber-700 transition-all transform hover:-translate-y-1 hover:scale-105">
-              See All Events
-            </button>
+            <div className="relative w-50 rounded-lg p-[1px] bg-[conic-gradient(from_var(--angle),#000e00,orange,#000000,#000000)] hover:bg-[conic-gradient(from_var(--angle),gray,white,#000000,#000000)] hover:scale-105 transition-all transform animate-gradient-rotate">
+              <Button className="w-full rounded-lg cursor-pointer font-bold bg-black hover:bg-black text-white shadow-md">
+                See All Events
+              </Button>
+            </div>
           </Link>
         </div>
       </section>
@@ -88,7 +97,7 @@ export default function Home() {
         />
       </section>
 
-      <hr className="my-12 border-t-2 border-gray-600 opacity-50" />
+      <hr className="my-16 border-t-2 border-gray-600 w-full opacity-50" />
 
       {/* Sponsors Section */}
       <section className="text-center">

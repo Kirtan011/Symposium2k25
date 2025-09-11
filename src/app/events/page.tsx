@@ -15,9 +15,22 @@ const EventPage = () => {
           Events 🚀
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {techEventData?.map((data, id) => (
+        {/* First row → exactly 3 cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-1">
+          {techEventData.slice(0, 3).map((data, id) => (
             <EventCard key={id} {...data} />
+          ))}
+        </div>
+
+        {/* Second row → 2 cards centered */}
+        <div className="sm:flex sm:justify-center gap-8">
+          {techEventData.slice(3).map((data, id) => (
+            <div
+              key={id + 3}
+              className="w-full sm:w-1/2 lg:w-1/3 max-w-sm mt-12 "
+            >
+              <EventCard {...data} />
+            </div>
           ))}
         </div>
       </section>

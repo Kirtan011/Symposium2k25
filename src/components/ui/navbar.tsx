@@ -27,13 +27,13 @@ export default function Navbar() {
       {/* Logo */}
       <Link href="/" className="block">
         <h1
-          className="text-4xl sm:text-5xl md:text-5xl font-extrabold tracking-tighter 
+          className="text-4xl sm:text-5xl md:text-5xl font-extrabold sm:font-extrabold tracking-tighter 
           bg-clip-text text-transparent drop-shadow-2xl
-          bg-[conic-gradient(from_var(--angle),#ffffff,#b45309,#ffffff)]
+          bg-[conic-gradient(from_var(--angle),#ffffff,#b45111,#ffffff)]
           animate-gradient-rotate
           hover:scale-105 transition-transform duration-300 text-center sm:text-left"
         >
-          Symposium 2k25
+          Symposium 2K25
         </h1>
       </Link>
 
