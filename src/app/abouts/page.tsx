@@ -16,7 +16,7 @@ export default function AboutPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <main>
+    <main className="animate-fadeInSlideUp">
       <section className="sm:ml-50 mb-8 sm:mb-24 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:pt-32 pt-24">
         <div className="relative  px-4 sm:px-8 py-6 flex justify-center sm:block">
           <div className="bg-gradient-to-r from-gray-500 via-gray-900/70  rounded-[35%_100%_85%_100%_/_100%_78%_100%_90%] shadow-xl sm:shadow-2xl p-6 text-center sm:text-left max-w-lg w-full">

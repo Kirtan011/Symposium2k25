@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <main className="relative w-full min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-12 py-16">
+    <main className="relative w-full min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-12 py-16 animate-fadeInSlideUp">
       {/* Logo Section */}
       <div className="w-full flex justify-between px-0 items-center  sm:p-0">
         <Image

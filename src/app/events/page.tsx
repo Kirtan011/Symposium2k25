@@ -12,7 +12,7 @@ const EventPage = () => {
           <span className="bg-gradient-to-r from-orange-400 via-orange-300 to-green-100 bg-clip-text text-transparent">
             Technical
           </span>{" "}
-          Events 🚀
+          Events 🤖
         </h1>
 
         {/* First row → exactly 3 cards */}
@@ -42,7 +42,7 @@ const EventPage = () => {
           <span className="bg-gradient-to-r from-orange-400 via-orange-300 to-green-100 bg-clip-text text-transparent">
             Non-Technical
           </span>{" "}
-          Events 🚀
+          Events 🧩
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
