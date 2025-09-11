@@ -279,7 +279,7 @@ const nonTechEventData = [
   },
   {
     id: "ChalChitra",
-    img: "/Posters/NonTech_ChalChitra.jpg",
+    img: "/Posters/NonTech_ChalChitra.png",
     tagline: "🎬 Lights Camera Action",
     formLink: "https://forms.gle/C1kt4ULyYjq8Uah96",
     rules: [
