@@ -55,7 +55,7 @@ export default function CodeVedaPage() {
 
       <div className="flex justify-center">
         <Link href="/">
-          <Button className="bg-black text-white hover:bg-gray-800 w-full sm:w-64">
+          <Button className="bg-gray-900 text-white hover:bg-gray-800 w-full sm:w-64">
             Back to Events
           </Button>
         </Link>

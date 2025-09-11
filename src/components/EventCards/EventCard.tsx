@@ -249,7 +249,7 @@ const nonTechEventData = [
     img: "/Posters/NonTech_RahasyahSanket.jpg",
     tagline: "🕵️ Crack Hidden Clues",
     formLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSeG4OTpKufIoga9FoVvAbDO8kG08sTo4BCRFYj8mmr5hr7p6Q/closedform",
+      "https://docs.google.com/forms/d/e/1FAIpQLScr5hxsLbtsG2M-PzLcyDzUVj_AEjTrhTWJFIKe6O5MLPn2Mg/viewform?usp=dialog",
     rules: [
       "------------------------------",
       "Round 1: Morse Race Lite",
