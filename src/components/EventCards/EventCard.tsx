@@ -306,7 +306,7 @@ const nonTechEventData = [
   },
   {
     id: "Stock-Market-Exchange",
-    img: "/Posters/Non_Stock.jpeg",
+    img: "/Posters/NonTech_Stock.jpeg",
     tagline: "Stock up , Stock Down!",
     formLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSfxcBd_MVel2fX9Nko3Zn23nhflzZsEkSm3Ep22Fd9imESSOQ/viewform",
