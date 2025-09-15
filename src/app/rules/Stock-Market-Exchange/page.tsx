@@ -1,11 +1,11 @@
 "use client";
 
-import { preEventData } from "@/components/EventCards/EventCard";
+import { nonTechEventData } from "@/components/EventCards/EventCard";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-const event = preEventData.find((e) => e.id === "Stock-Market-Exchange");
+const event = nonTechEventData.find((e) => e.id === "Stock-Market-Exchange");
 
 export default function CodeVedaPage() {
   if (!event)
