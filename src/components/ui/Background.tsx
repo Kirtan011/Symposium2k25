@@ -16,8 +16,6 @@ export default function ParticlesBackground() {
   if (!init) return null;
 
   return (
-    // FIX 1: Use min-h-screen to ensure the div covers the full viewport height.
-    // FIX 2: Change the gradient start color from 'gray-600' to a pure black like 'black' or a near-black like 'gray-950' to avoid any bluish tint.
     <div>
       {/* Particles on top */}
       <Particles
