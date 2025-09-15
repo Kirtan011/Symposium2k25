@@ -6,7 +6,6 @@ function HeadofDepartmentCard() {
   border border-gray-800 overflow-hidden hover:shadow-2xl hover:-translate-y-2 
   transition-all duration-300 group"
     >
-      {/* Profile Image */}
       <div className="relative flex justify-center mt-6">
         <div className="w-28 h-28 rounded-full bg-gradient-to-tr from-white to-black p-[2px] shadow-lg group-hover:scale-105 transition-all">
           <img
@@ -17,9 +16,7 @@ function HeadofDepartmentCard() {
         </div>
       </div>
 
-      {/* Content Section */}
       <div className="p-6 text-center space-y-3">
-        {/* Name + Role */}
         <div>
           <h2 className="text-2xl font-bold text-white">
             Prof. Chirag Paunwala

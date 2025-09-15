@@ -62,7 +62,7 @@ function SymposiumHeadCard({
 
   return (
     <div
-      className={`relative bg-transparent backdrop-blur-none rounded-2xl shadow-xl flex flex-row items-center border-2   hover:border-gray-500 hover:shadow-2xl hover:-translate-y-1 transition-all group duration-300 ${sizeClasses[size]}`}
+      className={`relative bg-transparent backdrop-blur-none rounded-2xl shadow-xl flex flex-row items-center border-2  hover:border-gray-500 hover:shadow-2xl hover:-translate-y-1 transition-all group duration-300 ${sizeClasses[size]}`}
     >
       {/* Profile Image */}
       <div className="flex-shrink-0 group-hover:scale-105 transition-all mr-4">
@@ -105,7 +105,7 @@ function SymposiumHeadCard({
                 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
               />
             </svg>
-            <span className="break-words">{email}</span>
+            <span className="flex flex-wrap break-words ">{email}</span>
           </p>
           <p className="flex items-center">
             <svg

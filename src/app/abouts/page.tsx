@@ -21,9 +21,9 @@ export default function AboutPage() {
         <div className="relative  px-4 sm:px-8 py-6 flex justify-center sm:block">
           <div className="bg-gradient-to-r from-gray-500 via-gray-900/70  rounded-[35%_100%_85%_100%_/_100%_78%_100%_90%] shadow-xl sm:shadow-2xl p-6 text-center sm:text-left max-w-lg w-full">
             <h1 className="fira-sans-semibold-italic text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
-              <span className="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-300 bg-clip-text text-transparent">
+              <h1 className="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-300 bg-clip-text text-transparent">
                 Head
-              </span>{" "}
+              </h1>{" "}
               of E&C Department
             </h1>
           </div>
