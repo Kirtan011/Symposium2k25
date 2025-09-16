@@ -107,7 +107,7 @@ const techEventData = [
   },
   {
     id: "SutraSync",
-    img: "/Posters/Tech_SutraSync.jpg",
+    img: "/Posters/Tech_SutraSync.png",
     tagline: "✨ Crack The Mystery",
     formLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSf5SlIil0TjEm-HqWtom_7yXcOZCeVUUXyKD_sIbyVwKIVN3w/viewform",
@@ -180,7 +180,7 @@ const techEventData = [
 const nonTechEventData = [
   {
     id: "LaserStrike",
-    img: "/Posters/NonTech_LaserStrike.jpg",
+    img: "/Posters/NonTech_LaserStrike.png",
     tagline: "🎯 Aim Shoot Score",
     formLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSd7H-wxDzNAOhVhXKSpPKmN4OZrvPOGtiDCBF54FpK5VXw6Xw/closedform",
@@ -310,26 +310,7 @@ const nonTechEventData = [
     tagline: "Stock up , Stock Down!",
     formLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSfxcBd_MVel2fX9Nko3Zn23nhflzZsEkSm3Ep22Fd9imESSOQ/viewform",
-    rules: [
-      "-----------------------------",
-      "💻 Round 1: MCQs",
-      "-----------------------------",
-      "   • Format: Multiple-choice type questions",
-      "   • Task: Test of basic programming and problem-solving skills",
-      "   • Qualification: Based on top scorers advancing to Round 2",
-      "-----------------------------",
-      "🧩 Round 2: Problem Solving",
-      "-----------------------------",
-      "   • Task: Solve given coding problems within the time limit",
-      "   • Rule: Efficiency and correctness will be evaluated",
-      "   • Qualification: Top performing participants move to Round 3",
-      "------------------------------",
-      "🔧 Round 3: Debug & Optimize",
-      "------------------------------",
-      "   • Task: Analyze, debug, and optimize provided code",
-      "   • Rule: Focus on correctness, optimization, and debugging skills",
-      "   • Winners: Final evaluation based on accuracy and efficiency",
-    ],
+    rules: ["Rules will be told during the event."],
   },
 ];
 
@@ -426,7 +407,7 @@ type PosterProp = {
 
 const EventCard = ({ img, id, tagline }: PosterProp) => {
   return (
-    <section className="relative p-[1px] rounded-xl bg-[conic-gradient(from_var(--angle),#000e00,#000001,#000000,gray,#000000)] hover:bg-[conic-gradient(from_var(--angle),orange,#000001,lightblue,orange)] animate-gradient-rotate">
+    <section className="relative p-[1px] rounded-xl bg-[conic-gradient(from_var(--angle),#000e00,#000001,#000000,#fff5e1,#000000)] hover:bg-[conic-gradient(from_var(--angle),orange,#000001,lightblue,orange)] animate-gradient-rotate">
       <div className="relative flex flex-col rounded-xl bg-black shadow-md overflow-hidden transition-all duration-300 group">
         <div className="relative flex justify-center h-[24rem]">
           <Image

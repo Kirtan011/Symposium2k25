@@ -34,7 +34,7 @@ export default function CodeVedaPage() {
         </p>
       )}
 
-      <section className="border bg-black border-gray-800 p-6 mb-8 shadow-md">
+      <section className="border border-gray-800 bg-black/65 backdrop-blur-2xl p-6 mb-8 shadow-md ">
         <h2 className="text-2xl font-bold mb-4">📜 Rules & Regulations</h2>
         <ul className="space-y-2 text-gray-300">
           {event.rules?.map((rule, idx) => (
@@ -54,10 +54,10 @@ export default function CodeVedaPage() {
       </div>
 
       <div className="flex justify-center">
-        <Link href="/">
-          <Button className="bg-gray-900 text-white hover:bg-gray-800 w-full sm:w-64">
+        <Link href="/events">
+          <button className="bg-black border-2 p-1 cursor-pointer text-white  w-full sm:w-64">
             Back to Events
-          </Button>
+          </button>
         </Link>
       </div>
     </main>

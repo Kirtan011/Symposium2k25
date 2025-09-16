@@ -1,9 +1,16 @@
-"use client";
-
 import "./globals.css";
 import Navbar from "../components/ui/navbar";
 import ParticlesBackground from "@/components/ui/Background";
 
+export const metadata = {
+  title: "Symposium 2K25",
+  description: "Official Symposium website",
+  icons: {
+    icon: "/Logos/Symposium_original.png", // ✅ favicon path
+    shortcut: "/Logos/Symposium_original.png",
+    apple: "/Logos/Symposium_original.png",
+  },
+};
 export default function RootLayout({
   children,
 }: {

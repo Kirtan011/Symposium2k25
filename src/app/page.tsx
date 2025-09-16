@@ -104,7 +104,7 @@ export default function Home() {
         <h1 className="sm:mb-12 text-4xl sm:text-5xl md:text-5xl font-extrabold tracking-tight text-gray-200 leading-tight">
           Our Worthy Sponsors
         </h1>
-        <div className="w-full flex justify-center items-center gap-12 mt-8">
+        <div className="w-full flex flex-wrap justify-center items-center gap-18 mt-8">
           <Image
             src="/Logos/IETE.png"
             alt="Sponsor Logo"
@@ -118,6 +118,13 @@ export default function Home() {
             width={100}
             height={100}
             className="w-28 sm:w-40 h-auto animate-fadeIn"
+          />
+          <Image
+            src="/Logos/Surat_Peoples.jpg"
+            alt="Sponsor Logo"
+            width={200}
+            height={200}
+            className="w-70 sm:w-100 h-auto animate-fadeIn"
           />
         </div>
       </section>
