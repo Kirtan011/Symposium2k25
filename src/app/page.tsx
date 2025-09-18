@@ -119,12 +119,35 @@ export default function Home() {
             height={100}
             className="w-28 sm:w-40 h-auto animate-fadeIn"
           />
+        </div>
+        <div className="w-full flex flex-wrap justify-center items-center gap-18 mt-8">
           <Image
             src="/Logos/Surat_Peoples.jpg"
             alt="Sponsor Logo"
             width={200}
             height={200}
-            className="w-70 sm:w-100 h-auto animate-fadeIn"
+            className="w-70 sm:w-120 h-auto animate-fadeIn"
+          />
+          <Image
+            src="/Logos/SSM.jpeg"
+            alt="Sponsor Logo"
+            width={100}
+            height={100}
+            className="w-30 sm:w-50 h-auto animate-fadeIn"
+          />
+          <Image
+            src="/Logos/Rebounce.jpeg"
+            alt="Sponsor Logo"
+            width={100}
+            height={100}
+            className="w-30 sm:w-50 border-1 h-auto animate-fadeIn"
+          />
+          <Image
+            src="/Logos/Suchi.jpg"
+            alt="Sponsor Logo"
+            width={100}
+            height={100}
+            className="w-30 sm:w-50 border-1 h-auto animate-fadeIn"
           />
         </div>
       </section>
